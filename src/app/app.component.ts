@@ -12,7 +12,7 @@ export class AppComponent {
   rand = () => {
     let randNum: string = "";
     for (let i: number = 0; i < 10; i++) {
-      randNum += Math.floor(Math.random() * 10).toString()
+      randNum += (Math.floor(Math.random() * 9)+1).toString()
     }
     this.randOutput = randNum
   }
